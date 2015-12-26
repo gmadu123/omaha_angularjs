@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form name="frmActorSearch" action="UserProfileServlet">
+<form name="frmActorSearch" action="http://localhost:8080/AngularJSProject/UserProfileServlet">
 
 <div>
 <table  align="center">
