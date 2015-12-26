@@ -35,8 +35,10 @@ public class CustomerServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		
+		
 		CustomerService teluguGuy = new CustomerService();
-		List<Customer> mycustomers =   teluguGuy.getCustomerProfileByFirstName("A");
+		List<Customer> mycustomers =   teluguGuy.getCustomerProfileByFirstName(request.getParameter("fname"),request.getParameter("lname"));
 		
 		request.setAttribute("customers", mycustomers);
 		
